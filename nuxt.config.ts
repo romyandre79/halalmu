@@ -34,13 +34,11 @@ export default defineNuxtConfig({
         { name: 'format-detection', content: 'telephone=no' }
       ]
     }
-  }
-}
   },
   runtimeConfig: {
-  public: {
-    apiBase: process.env.NUXT_PUBLIC_API_BASE || 'http://localhost:8080/api/v1',
-    appEnv: process.env.NUXT_APP_ENV || 'development'
+    public: {
+      apiBase: process.env.NUXT_PUBLIC_API_BASE || 'http://localhost:8080/api/v1',
+      appEnv: process.env.NUXT_APP_ENV || 'development'
+    }
   }
-}
 })
