@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.18",
+    "@types/node": "^25.2.0",
     "autoprefixer": "^10.4.24",
     "nuxt-security": "^2.5.1",
     "postcss": "^8.5.6",
