@@ -80,16 +80,11 @@
 <script setup lang="ts">
 const role = ref<'customer' | 'tenant'>('customer')
 
-const handleLogin = () => {
-    // Navigate to dashboard based on role
-    if (role.value === 'tenant') {
-        navigateTo('/tenant/dashboard')
-    } else {
-        navigateTo('/customer/dashboard') // or home
     }
 }
 
-useHead({
-  title: 'Login - Halalmu'
+useSeoMeta({
+  title: 'Login - Halalmu',
+  description: 'Sign in to your Halalmu account to check orders, manage store, and more.'
 })
 </script>

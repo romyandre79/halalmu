@@ -200,7 +200,8 @@ const removeFromCart = (index: number) => {
     cart.value.splice(index, 1)
 }
 
-useHead({
-  title: 'Shopping Cart - Halalmu'
+useSeoMeta({
+  title: 'Shopping Cart - Halalmu',
+  description: 'Review your shopping cart and proceed to checkout securely on Halalmu.'
 })
 </script>

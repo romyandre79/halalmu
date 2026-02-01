@@ -150,8 +150,11 @@ const { addToCart } = useCart()
 const categoryName = computed(() => (route.params.slug as string).replace('-', ' '))
 const loading = ref(true)
 
-useHead({
-  title: `${categoryName.value} - Halalmu`
+useSeoMeta({
+  title: () => `${categoryName.value} - Halalmu`,
+  description: () => `Shop the best ${categoryName.value} products on Halalmu. Certified halal, verified sellers, and great prices.`,
+  ogTitle: () => `${categoryName.value} - Halalmu Marketplace`,
+  twitterCard: 'summary_large_image',
 })
 
 onMounted(() => {

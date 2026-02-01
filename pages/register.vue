@@ -74,16 +74,11 @@
 <script setup lang="ts">
 const role = ref<'customer' | 'tenant'>('customer')
 
-const handleRegister = () => {
-    // Navigate to dashboard based on role (Mockup)
-    if (role.value === 'tenant') {
-        navigateTo('/tenant/dashboard')
-    } else {
-        navigateTo('/customer/dashboard') // or home
     }
 }
 
-useHead({
-  title: 'Register - Halalmu'
+useSeoMeta({
+  title: 'Register - Halalmu',
+  description: 'Join Halalmu today. Create a customer or seller account to start shopping or selling halal products.'
 })
 </script>
